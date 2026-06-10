@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cuaderno Digital Interactivo de Inteligencia Artificial - Portal Educativo Colaborativo">
+    <title>Cuaderno Digital IA - Portal Educativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación Principal -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-brain"></i>
+                <span>Cuaderno IA</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#contenido" class="nav-link">Contenido</a></li>
+                <li><a href="#unidades" class="nav-link">Unidades</a></li>
+                <li><a href="#recursos" class="nav-link">Recursos</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Cuaderno Digital de Inteligencia Artificial</h1>
+            <p>Explora el fascinante mundo de la IA a través de un portal educativo colaborativo e interactivo</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contenido')">Explorar Contenido</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('unidades')">Ver Unidades</button>
+            </div>
+        </div>
+        <div class="hero-background">
+            <canvas id="canvas-background"></canvas>
+        </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>4+</h3>
+                <p>Unidades Temáticas</p>
+            </div>
+            <div class="stat-card">
+                <h3>100+</h3>
+                <p>Temas Cubiertos</p>
+            </div>
+            <div class="stat-card">
+                <h3>Grupal</h3>
+                <p>Proyecto Colaborativo</p>
+            </div>
+            <div class="stat-card">
+                <h3>Dinámico</h3>
+                <p>Contenido Interactivo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contenido Principal -->
+    <section id="contenido" class="contenido-principal">
+        <div class="section-header">
+            <h2>Materiales Disponibles</h2>
+            <p>Descarga los cuadernos digitalizados con todo el contenido teórico</p>
+        </div>
+        <div class="contenido-grid">
+            <!-- Card 1: Cuaderno Completo -->
+            <div class="content-card">
+                <div class="card-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h3>Cuaderno Completo de IA</h3>
+                <p>Contenido integral sobre Inteligencia Artificial con todas las unidades y temas fundamentales.</p>
+                <div class="card-info">
+                    <span><i class="fas fa-file-pdf"></i> PDF</span>
+                    <span><i class="fas fa-database"></i> 1.3 MB</span>
+                </div>
+                <a href="https://github.com/Chocomilk22/IA-/raw/main/Cuaderno%20Ia.pdf" class="btn btn-download" target="_blank">
+                    <i class="fas fa-download"></i> Descargar
+                </a>
+            </div>
+
+            <!-- Card 2: Unidades 3 y 4 -->
+            <div class="content-card">
+                <div class="card-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>Unidad 3 y Unidad 4</h3>
+                <p>Material especializado: Fundamentos avanzados y aplicaciones prácticas de Inteligencia Artificial.</p>
+                <div class="card-info">
+                    <span><i class="fas fa-file-pdf"></i> PDF</span>
+                    <span><i class="fas fa-database"></i> 368 KB</span>
+                </div>
+                <a href="https://github.com/Chocomilk22/IA-/raw/main/Cuaderno%20Digital%20IA%2C%20Unidad%203%20y%20Unidad%204.pdf" class="btn btn-download" target="_blank">
+                    <i class="fas fa-download"></i> Descargar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Unidades -->
+    <section id="unidades" class="unidades">
+        <div class="section-header">
+            <h2>Estructura de Unidades</h2>
+            <p>Conoce los temas que se cubren en nuestro cuaderno digital</p>
+        </div>
+        <div class="unidades-container">
+            <div class="unidad-item">
+                <div class="unidad-numero">1</div>
+                <h3>Fundamentos de IA</h3>
+                <p>Conceptos básicos, historia y evolución de la Inteligencia Artificial</p>
+                <ul class="unidad-topics">
+                    <li>Definición de IA</li>
+                    <li>Aplicaciones principales</li>
+                    <li>Limitaciones actuales</li>
+                </ul>
+            </div>
+            <div class="unidad-item">
+                <div class="unidad-numero">2</div>
+                <h3>Machine Learning</h3>
+                <p>Algoritmos de aprendizaje automático y sus clasificaciones</p>
+                <ul class="unidad-topics">
+                    <li>Aprendizaje supervisado</li>
+                    <li>Aprendizaje no supervisado</li>
+                    <li>Evaluación de modelos</li>
+                </ul>
+            </div>
+            <div class="unidad-item">
+                <div class="unidad-numero">3</div>
+                <h3>Deep Learning</h3>
+                <p>Redes neuronales profundas y arquitecturas avanzadas</p>
+                <ul class="unidad-topics">
+                    <li>Redes neuronales convolucionales</li>
+                    <li>Procesamiento de lenguaje natural</li>
+                    <li>Visión por computadora</li>
+                </ul>
+            </div>
+            <div class="unidad-item">
+                <div class="unidad-numero">4</div>
+                <h3>Aplicaciones Prácticas</h3>
+                <p>Implementación real de modelos de IA en la industria</p>
+                <ul class="unidad-topics">
+                    <li>Chatbots inteligentes</li>
+                    <li>Análisis predictivo</li>
+                    <li>Sistemas de recomendación</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Recursos -->
+    <section id="recursos" class="recursos">
+        <div class="section-header">
+            <h2>Recursos Complementarios</h2>
+            <p>Herramientas y enlaces útiles para profundizar en el conocimiento de IA</p>
+        </div>
+        <div class="recursos-grid">
+            <div class="recurso-card">
+                <i class="fas fa-code"></i>
+                <h3>Frameworks</h3>
+                <p>TensorFlow, PyTorch, Scikit-learn y otras librerías esenciales</p>
+            </div>
+            <div class="recurso-card">
+                <i class="fas fa-video"></i>
+                <h3>Tutoriales</h3>
+                <p>Videotutoriales y cursos online para aprender IA prácticamente</p>
+            </div>
+            <div class="recurso-card">
+                <i class="fas fa-newspaper"></i>
+                <h3>Artículos</h3>
+                <p>Papers y artículos académicos sobre investigación en IA</p>
+            </div>
+            <div class="recurso-card">
+                <i class="fas fa-users"></i>
+                <h3>Comunidades</h3>
+                <p>Redes de profesionales y entusiastas en IA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Formulario de Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="section-header">
+            <h2>Ponte en Contacto</h2>
+            <p>¿Preguntas o sugerencias sobre el contenido? Envíanos un mensaje</p>
+        </div>
+        <form class="formulario-contacto" id="contactForm">
+            <div class="form-group">
+                <input type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Cuaderno IA</h4>
+                <p>Portal educativo colaborativo sobre Inteligencia Artificial</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#contenido">Contenido</a></li>
+                    <li><a href="#unidades">Unidades</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Síguenos</h4>
+                <div class="social-links">
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cuaderno Digital IA. Proyecto Grupal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
